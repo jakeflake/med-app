@@ -1,8 +1,10 @@
-## MED-App v0.0.1
+### MED-App v0.0.1
  
 | what          | where                                          |
 |---------------|------------------------------------------------|
 | github | https://github.com/jakeflake/med-app  |
+| cloud9 | https://c9.io/jakeflake/med-app       |
+
 
 ### Running the server
 
@@ -20,6 +22,7 @@ and then press CTRL+C to stop the service. Or click the "STOP" button! ;)
 8. Work with the data
 9. If you want to stop the server, simply press CTRL+C in the terminal tab or press the red "STOP button
 
+
 ### Using the database
 
 0. Make sure the server is not running
@@ -31,3 +34,16 @@ and then press CTRL+C to stop the service. Or click the "STOP" button! ;)
 6. You are now in the mongodb shell and can enter special commands (look here: http://docs.mongodb.org/manual/tutorial/getting-started/)
 7. Modify the database
 8. If you are done, write "exit" in the bottom terminal tab and use the CTRL+C command to close the database in the new terminal window you openend at the beginning
+
+
+### Commiting changes to Github
+
+1. Make some changes to the project files
+2. Enter "git status" into the terminal bar to see if the changes were recognized by Github
+3. Have a look at: http://rogerdudler.github.io/git-guide/
+4. Add all new and modified files and folders via the add command (e.g. git add file1.jpg)
+5. The same with rm for removed files (if there are any)
+6. When you added all changed files (check with "git status") make a new commit by entering: git commit -m "Commit message"
+7. Push the new commit to Github by entering: git push origin master
+8. That's it.
+
