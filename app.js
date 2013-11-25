@@ -16,10 +16,6 @@ app.configure(function () {
 });
 
 // Routes
-app.get("/", function (request, response) {
-    response.send(200, "Hello World!");
-});
-
 app.get('/db', db.findAll);
 
 // Server Listening
