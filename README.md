@@ -3,7 +3,7 @@
 | what          | where                                          |
 |---------------|------------------------------------------------|
 | github | https://github.com/jakeflake/med-app  |
-| cloud9 | https://c9.io/jakeflake/med-app       |
+| cloud9 | https://c9.io/jakeflake/med-app         |
 
 
 ### Running the server
