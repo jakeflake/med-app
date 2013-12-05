@@ -2,7 +2,8 @@
 var express = require('express'),
     path = require('path'),
     http = require('http'),
-    mongo = require('mongodb');
+    mongo = require('mongodb'),
+    dateFormat = require('dateformat');
 
 // Setup new express application
 var app = express();
@@ -21,7 +22,7 @@ var Server = mongo.Server,
     BSON = mongo.BSONPure;
 
 // Setup connection to database 
-var server = new Server(process.env.IP, 27017, {auto_reconnect: true});
+var server = new Server(process.env.IP, 27017, {auto_reconnect: true, safe: true});
 var db = new Db('data', server);
 
 // Open connection to database
@@ -38,9 +39,11 @@ db.open(function(err, db) {
 
 // Routes
 app.post('/creategoal', function(req, res) {
-    console.log(req.body.user.desc);
+    console.log(req.body.user.dueDate);
+    var now = new Date();
+    var saveDate = dateFormat(now, "dddd, mmmm dS");
     db.collection('medData', function(err, collection) {
-        collection.save({goal: req.body.user.goal, priority: req.body.user.priority,  desc: req.body.user.desc});
+        collection.save({goal: req.body.user.goal, priority: req.body.user.priority,  desc: req.body.user.desc, dueDate: saveDate});
     });
     res.redirect('/');
 });
