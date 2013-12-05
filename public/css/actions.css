@@ -1,0 +1,59 @@
+div#actions {
+	display: flex;
+	flex-direction: column;
+	min-height: 15em;	
+	padding: 1em;
+	background: transparent; /* W3C */
+}
+
+div#actions button {
+	padding: 2em 1.5em;
+	border: 0.015em outset #dadada;
+	margin: 1.0em;
+	font: 1.8em Helvetica, Tahoma;
+	border-radius: 15px;
+	color:#f3f3f3;
+	text-shadow: 2px 2px 5px black;
+	background: -moz-linear-gradient(top,  #b5bdc8 0%, #828c95 36%, #28343b 100%); /* FF3.6+ */
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#b5bdc8), color-stop(36%,#828c95), color-stop(100%,#28343b)); /* Chrome,Safari4+ */
+	background: -webkit-linear-gradient(top,  #b5bdc8 0%,#828c95 36%,#28343b 100%); /* Chrome10+,Safari5.1+ */
+	background: -o-linear-gradient(top,  #b5bdc8 0%,#828c95 36%,#28343b 100%); /* Opera 11.10+ */
+	background: -ms-linear-gradient(top,  #b5bdc8 0%,#828c95 36%,#28343b 100%); /* IE10+ */
+	background: linear-gradient(to bottom,  #b5bdc8 0%,#828c95 36%,#28343b 100%); /* W3C */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#b5bdc8', endColorstr='#28343b',GradientType=0 ); /* IE6-9 */
+	box-shadow: 2px 1px 6px rgba(16,15,16,.7);
+}
+
+div#actions button:hover {
+	border: 0.015em outset #dadada;
+	border-radius: 15px;
+	color:#f3f3f3;
+	text-shadow: 1px 1px 6px rgba(255,255,255,.7);
+	background: -moz-linear-gradient(top,  #7d7e7d 0%, #0e0e0e 100%); /* FF3.6+ */
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#7d7e7d), color-stop(100%,#0e0e0e)); /* Chrome,Safari4+ */
+	background: -webkit-linear-gradient(top,  #7d7e7d 0%,#0e0e0e 100%); /* Chrome10+,Safari5.1+ */
+	background: -o-linear-gradient(top,  #7d7e7d 0%,#0e0e0e 100%); /* Opera 11.10+ */
+	background: -ms-linear-gradient(top,  #7d7e7d 0%,#0e0e0e 100%); /* IE10+ */
+	background: linear-gradient(to bottom,  #7d7e7d 0%,#0e0e0e 100%); /* W3C */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#7d7e7d', endColorstr='#0e0e0e',GradientType=0 ); /* IE6-9 */
+	box-shadow: 2px 1px 6px rgba(16,15,16,.7);
+	cursor: pointer;
+}
+
+/* Styling for the first direct child of div#subAction */
+#subAction > div {
+    margin-bottom: 1.5em;
+}
+
+.simpleButton {
+    padding: 1em .5em;
+    font: 1.4em Helvetica, Tahoma;
+	border-radius: 10px;
+	color:#f3f3f3;
+    border: 3px outset #dadada;
+    background: linear-gradient(to bottom,  #b5bdc8 0%,#828c95 36%,#28343b 100%); /* W3C */
+}
+.simpleButton:hover {
+    border: 3px inset #dadada;
+    background: linear-gradient(to bottom,  #7d7e7d 0%,#0e0e0e 100%); /* W3C */
+}

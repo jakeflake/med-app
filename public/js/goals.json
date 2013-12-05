@@ -1,0 +1,32 @@
+[
+	{
+		"title" : "Drop cholesterol under 160mg/L",
+		"priority" : 10,
+		"addedOn" : "2013-4-6",		
+		"description" : "Doctor suggested that it is imperative I succeed this goal to improve my overall health status."
+	},
+	{
+		"title" : "Remember to do daily recommended exercises for the back",
+		"priority" : 8,
+		"addedOn" : "2013-7-4",		
+		"description" : ""
+	},
+	{
+		"title" : "Walk 2km every day",
+		"priority" : 6,
+		"addedOn" : "2013-6-24",		
+		"description" : "Not very much to say about this goal. Walk more live longer"
+	},
+	{
+		"title" : "Include more calcium in my daily diet",
+		"priority" : 7,
+		"addedOn" : "2012-6-6",		
+		"description" : "I must increase the structural integrity of my bones."
+	},
+	{
+	    "title" : "Daily blood pressure readings",
+		"priority" : 9,
+		"addedOn" : "2011-5-21",		
+		"description" : "Take pressure readings at least once per day to monitor the effectivess of my treatment. I need to tell doctor immediately if numbers fly off the charts."
+	}
+]

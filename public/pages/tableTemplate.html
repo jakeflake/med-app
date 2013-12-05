@@ -1,0 +1,44 @@
+<!doctype html>
+<html lang="en" ng-app>
+  <head>
+    <title>Goals overview</title>
+	<meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <link rel="stylesheet" href="../css/tableStyler.css"/>
+	<script src="../js/jquery.min.js"></script>
+	<script src="../js/init.js"></script>
+  </head>
+  
+	<body>
+
+	<table class="tblTemplate" id="goals">
+		<!-- COLUMNS -->
+		
+		<!-- THEAD -->
+		<thead>
+			<tr>
+				<th>#</th>
+				<th>Title</th>
+				<th>Priority</th>				
+				<th>Added on</th>				
+			</tr>
+		</thead>
+		
+		<!-- Excerpt from W3C: TFOOT must appear before TBODY within a TABLE definition so that user agents can render the foot before receiving all of the (potentially numerous) rows of data. -->
+		<tfoot>			
+			<tr><td colspan="4">
+				<button id="btnAddGoal">+ Add goal</button>
+				<button id="btnCollapseAll">Collapse All</button>
+				<button id="btnExpandAll">Expand All</button>
+			</td></tr>
+		</tfoot>
+		
+		<!-- TBODY -->
+		<tbody>
+			<!-- tbody is filled reading data from goals.json -->
+		</tbody>
+	</table>
+
+	</body>
+	</html>
+</html>

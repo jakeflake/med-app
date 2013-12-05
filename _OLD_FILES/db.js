@@ -30,3 +30,11 @@ exports.findAll = function(req, res) {
         });
     });
 };
+
+exports.showGoals = function(req, res) {
+    db.collection('medData', function(err, collection) {
+        collection.find().toArray(function(err, items) {
+            res.send(items);
+        });
+    });
+};

@@ -1,0 +1,139 @@
+/* Generic styling for the whole table */
+.tblTemplate {    
+	padding: .2em;
+	margin: 1em auto;
+    font-family: "Lucida Sans Unicode","Lucida Grande",Sans-Serif;
+    font-size: 1em;        
+    width: 80%;
+    border-radius: 7px;
+    border: 2px outset #A5ACC6;
+	background: rgba(94,133,242,.4);
+	box-shadow: 3px 4px 17px rgba(0,0,0,.5);
+	min-width: 35em;
+}
+
+/* Styling the TH and TD cells collectively */
+.tblTemplate td, .tblTemplate th {    
+    padding: .25em;
+}
+
+/* Styling the cells in TFOOT and THEAD collectively */
+.tblTemplate tfoot td, .tblTemplate thead th {    
+    background: rgb(0,6,91);	/* fall-back colour */
+	background: linear-gradient(135deg, rgba(0,6,91,1) 1%,rgba(80,77,112,1) 100%);
+	border: 1px solid #ADC0F7;
+}
+
+/*Styling the TH cells in THEAD */
+.tblTemplate thead th {
+    font-weight: bold;
+	text-align: center;	
+	color: white;
+}
+.tblTemplate thead th:hover {
+	text-shadow: 2px 1px 5px white;
+}
+
+	/*Styling the TOP-LEFT TH cell in THEAD */
+	.tblTemplate thead tr th:first-child {
+		border-radius: 5px 0 0 0;
+	}
+
+	/*Styling the TOP-RIGHT TH cell in THEAD */
+	.tblTemplate thead tr th:last-child {
+		border-radius: 0 5px 0 0;
+	}
+
+/* Styling TD in TFOOT */
+.tblTemplate tfoot td {
+	border-radius: 0 0 5px 5px;
+}
+
+/* Styling TD in TBODY */
+.tblTemplate tbody td { /*nothing for now*/ }
+
+/* Styling ALL BUT the second column (TITLE) of TBODY */
+.tblTemplate tbody tr td:not(:nth-child(2)) { 
+	text-align: center;
+}
+
+/* Styling THE second column (TITLE) of TBODY */
+.tblTemplate tbody tr td:nth-child(2) {
+	text-align: left;
+	padding-left: .4em;
+	overflow: hidden;
+	min-width: 20em;
+}
+
+/* Styling the ODD rows (1, 3, 5, etc) of TBODY */
+.tblTemplate tbody tr:nth-child(odd) {
+    background: none repeat scroll 0 0 #D9E1F4;
+    color: #333399;
+    cursor: pointer;
+}
+.tblTemplate tbody tr:hover, .tblTemplate tbody tr:hover + tr {
+    background: rgba(232,225,132,.7);
+	color: #0C1268;
+}
+
+/* Styling the EVEN (2, 4, 6, etc) rows of TBODY */
+.tblTemplate tbody tr:nth-child(even) {    
+    background: #D2E9F7;
+}
+.collapsed {
+    display: none;
+}
+
+/*Styling TFOOT buttons */
+.tblTemplate button {
+     background: none repeat scroll 0% 0% #7A9CE9;	/* fall-back colour */
+	 background: linear-gradient(135deg, #1E5799 1%, #7A9CE9 100%) repeat scroll 0 0 rgba(0, 0, 0, 0);
+     border-radius: 7px;
+     border: 2px ridge #8D9CE9;
+     color: yellow;
+     cursor: pointer;
+     font-size: 1.05em;
+     margin: 0.17em 0.5em;
+     padding: 0.23em;
+     text-shadow: 1px 2px 4px rgba(0, 0, 0, 0.6);
+     transition: all 0.1s ease 0s;
+}
+.tblTemplate button:hover {
+	background: linear-gradient(135deg, #79689E 1%, #AE95E2 100%) repeat scroll 0px 0px transparent;
+	color: #FEFFE8;
+	margin: 0px 0.5em;
+	padding: 0.4em 0.23em;
+	transition: all 0.1s ease 0s;
+	text-shadow: 1px 1px 7px yellow;
+}
+
+/* Styling the DESCRIPTION hidden cells */
+.tblTemplate tbody tr:nth-child(even) td {
+	background: none repeat scroll 0% 0% white;
+	padding: 0.5em;
+	text-align: left;
+}
+
+.tblTemplate tbody tr:nth-child(even) td h1 {
+	font-size: 1.1em;
+	margin: .1em .25em .05em .25em;
+	color: #0F077F;
+}
+
+.tblTemplate tbody tr:nth-child(even) td p {
+	font-size: 1em;
+	margin: .1em .25em;
+	color: #0C071E;
+}
+
+/* Edit icon 
+.editIcon {
+    display: none;
+    background: transparent url('../img/file_edit.png') no-repeat;
+    height: .75em; width: .75em;
+}
+.editIcon:hover, .tblTemplate tbody tr:nth-child(odd) {
+    display: block;
+    position: relative;
+    right: -1em;
+}*/

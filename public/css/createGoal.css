@@ -1,0 +1,33 @@
+/* Styling the whole table element */
+#createGoalForm table {
+    text-align: left;
+    width: 55%;
+    font: 1.2em Tahoma;
+    margin: .2em auto;
+    padding: .4em;
+    border: 3px ridge #4B936D;
+    border-radius: .5em;
+}
+
+/* Styling the table rows */
+#createGoalForm table tr:not(:last-child) {
+    border-bottom: 2px dotted rgba(125,125,125,.2);
+}
+
+/* Styling the table header cells */
+#createGoalForm table tr th { font-weight: normal;}
+
+/* Styling the table data cells */
+#createGoalForm table tr td { font-weight: normal;}
+
+/* Styling both data and header cells */
+#createGoalForm tr,#createGoalForm td {padding: .15em;}
+
+/* Styling the 1st column */
+#createGoalForm table tr th:first-child, #createGoalForm table tr td:first-child { width: auto;}
+
+/* Styling form elements */
+#createGoalForm input, #createGoalForm select, #createGoalForm textarea {
+    width: 100%; padding:0; margin:0; font-size:1em;
+}
+#createGoalForm input[type=submit] {padding: .2em 0;}
