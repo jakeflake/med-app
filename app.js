@@ -37,9 +37,18 @@ db.open(function(err, db) {
 });
 
 // Routes
+app.post('/creategoal', function(req, res) {
+    console.log(req.body.user.desc);
+    db.collection('medData', function(err, collection) {
+        collection.save({goal: req.body.user.goal, priority: req.body.user.priority,  desc: req.body.user.desc});
+    });
+    res.redirect('/');
+});
+
 app.get('/test', function(req, res) {
     res.json({ message: 'its actually working, wow!' });
 });
+
 
 app.get('/goals', function(req, res) {
     db.collection('medData', function(err, collection) {

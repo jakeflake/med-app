@@ -2,7 +2,7 @@
 	<h1>Goal Creation</h1>
 	<p>Use the following form to create your new health goal.</p>
 	
-	<form id="createGoalForm" method="post">
+	<form id="createGoalForm" action="/creategoal" method="post">
 		<table>
 		<tbody>
     		<tr>
@@ -10,15 +10,15 @@
     		    <th><label for="goalPriority">Priority</label></th>
     		</tr>
 		    <tr>
-		        <td><input id="goalTitle" type="text" name="goal" tabindex=1 maxlength=50 /></td>
+		        <td><input id="goalTitle" type="text" name="user[goal]" tabindex=1 maxlength=50 /></td>
     		    <td>
-    		        <select id="goalPriority" form="createGoalForm" tabindex=2>
+    		        <select id="goalPriority" name="user[priority]" form="createGoalForm" tabindex=2>
 		            <option value=1>1</option><option value=2>2</option><option value=3>3</option><option value=4>4</option><option selected="selected" value=5>5</option><option value=6>6</option><option value=7>7</option><option value=8>8</option><option value=9>9</option><option value=10>10</option>
     		        </select>
 		        </td>
             </tr>
     		<tr><th colspan=2><label for="goalDescription">Goal description</label></th></tr>
-    		<tr><td colspan=2><textarea id="goalDescription" form="createGoalForm" tabindex=3 ></textarea></td></tr>
+    		<tr><td colspan=2><textarea id="goalDescription" name="user[desc]" form="createGoalForm" tabindex=3 ></textarea></td></tr>
     		<tr><td colspan=2><input class="simpleButton" type="submit" name="create" value="Create goal" tabindex=4 /></td></tr>
 		</tbody>
 		</table>

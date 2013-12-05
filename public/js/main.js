@@ -34,7 +34,7 @@ function getGoals() {
             	'</td><td class="goal-date">'
             	+json[index].dueDate+
             	'</td></tr><tr><td colspan=4>'
-            	+json[index].description+
+            	+json[index].desc+
             	'</td></tr>');
             });
         }
