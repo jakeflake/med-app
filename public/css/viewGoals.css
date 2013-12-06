@@ -1,12 +1,13 @@
 #viewGoals table {
     border-collapse: inherit;
-    font-family: "Lucida Sans Unicode","Lucida Grande",Sans-Serif;
+    font-family: 'Raleway', sans-serif;
+	font-weight: 200;
     font-size: 12px;
     margin: 20px auto;
     text-align: left;
     width: 90%;
     border-radius: 5px;
-    border: 2px ridge #A5ACC6;;
+    border: 2px ridge #e5e5e5;;
     background: white;
 }
 #viewGoals table td, #viewGoals table th {
@@ -14,30 +15,24 @@
     padding: .25em .25em .25em .4em;
 }
 #viewGoals table thead th {
-    color: #003399;
-    font-weight: bold;
+    color: #666;
+    font-weight: 700;
 }
 #viewGoals table tbody td {
-    color: #666699;
+    color: #333;
 }
 #viewGoals table tbody tr:not(:last-child) td {
-    border-bottom: 2px dotted #E8EDFF;
+    border-bottom: 1px dotted #f2f2f2;
 }
 #viewGoals table thead tr {
-    background: none repeat scroll 0 0 #C9DDED;
-}
-
-#viewGoals table tbody tr:nth-child(odd) {
-    background: none repeat scroll 0 0 #EFF2FF;
-    color: #333399;
-    cursor: pointer;
+    color: #666;
+    background: #f2f2f2;
 }
 #viewGoals table tbody tr:nth-child(odd):hover {
+    cursor: pointer;
     background: none repeat scroll 0 0 #D8E1FF;
 }
-
 #viewGoals table tbody tr:nth-child(even) {
-    background: rgb(221,178,234);
-    background: rgba(221,178,234,.4);
+    background: #e5e5e5;
     display:none;
 }
